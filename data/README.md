@@ -40,8 +40,8 @@ ds = load_dataset("imdb")
 ```python
 from datasets import load_dataset
 
-raw_datasets = load_dataset("squad")
-# raw_datasets["train"], raw_datasets["validation"]
+ds = load_dataset("squad")
+# ds["train"], ds["validation"]
 ```
 
 ### GLUE (General Language Understanding Evaluation)
@@ -54,21 +54,6 @@ task_name = "sst2"
 ds = load_dataset("glue", task_name)
 # ds["train"], ds["validation"], ds["test"]
 ```
-
-## 3. Colab Usage (Optional)
-
-On Google Colab, after loading the dataset you can inspect or preprocess it in-place. If you need to export raw files, you can zip the default cache folder and download:
-
-```bash
-!zip -r datasets.zip ~/.cache/huggingface/datasets
-```
-
-```python
-from google.colab import files
-files.download("datasets.zip")
-```
-
-No extra saving steps are necessary unless you want to package the cache for reuse across sessions.
 
 ---
 
