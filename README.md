@@ -36,8 +36,8 @@ We trained a smaller student model (TinyDistilBERT) using KL-divergence, masked 
 
 1. Clone the repository:
    ```bash
-   git clone <your-repo-link>
-   cd TinyDistilBERT
+   git clone https://github.com/Solomon-Lee/distillBert_4782.git
+   cd distillBert_4782
    ```
 2. Pretrain the student model by running through all the cells for DistillBert_training.ipynb
 3. Fine-tune on downstream tasks with DistilBert_GLUE_CS4782.ipynb, DistilBert_IMDB_CS4782.ipynb, DistilBert_SQUAD_CS4782.ipynb, and DistilBert_Second_step_SQUAD_CS4782.ipynb.
